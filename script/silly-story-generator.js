@@ -17,7 +17,6 @@ const insertZ = ["spontaneously combusted", "melted into a puddle on the sidewal
 
 
 // 3. EVENT LISTENER AND PARTIAL FUNCTION DEFINITION
-
 randomize.addEventListener('click', result);
 
 function result() {
@@ -38,7 +37,7 @@ function result() {
 
     if(document.getElementById("uk").checked) {
         const weight = `${Math.round(300 * 0.0714286)} stone`;
-        const temperature =  `${Math.round(94)} centigrade`;
+        const temperature = `${Math.round(94 - 32) * 5 / 9} centigrade`;
 
         newStory = newStory.replaceAll("94 fahrenheit", temperature);
         newStory = newStory.replaceAll("300 pounds", weight);
